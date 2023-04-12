@@ -52,4 +52,25 @@ public class controller04 {
 	public void method05(@RequestParam("score") int score) {
 		System.out.println("score: " + score);
 	}
+	
+	@RequestMapping("link6")
+	public void method06(@RequestParam String email) {
+		System.out.println(email);
+	}
+	
+	@RequestMapping("link7")
+	public void method07(@RequestParam int age) {
+		System.out.println(age);
+	}
+	
+	@RequestMapping("link8")
+	public void method08(String address) {
+		System.out.println(address);
+	}
+	
+	// 경로: /sub4/link9?score=99.7
+	@RequestMapping("link9")
+	public void method09(double score) {
+		System.out.println(score);
+	}
 }
