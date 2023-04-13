@@ -31,11 +31,12 @@ public class controller10 {
 	public void method3(
 						String model,
 						double price,
-						Dto04 obj) {
-		/*
+						Dto04 obj,
+						Model modelMap) {
+		
 		modelMap.addAttribute("model", model);
 		modelMap.addAttribute("price", price);
-		*/
+		
 		
 	}
 						
