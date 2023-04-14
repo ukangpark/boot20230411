@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class controller11 {
 	@Value("${spring.datasource.url}")
 	private String url;
-	@Value("${spring.datasource.name}")
+	@Value("${spring.datasource.username}")
 	private String name;
 	@Value("${spring.datasource.password}")
 	private String password;
