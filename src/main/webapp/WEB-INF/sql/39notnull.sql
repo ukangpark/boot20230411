@@ -34,9 +34,11 @@ CREATE TABLE MyTable19 (
 DESC MyTable19;
 INSERT INTO MyTable19(Col1, Col2)
 VALUES (100, 200);
-INSERT INTO MyTable19 (Col2)
-VALUES (200); -- ok Col1에는 0
+INSERT INTO MyTable19 (Col1,Col2) VALUES (null, 0);
+INSERT INTO MyTable19 (Col2) VALUES (200); -- ok Col1에는 0
 INSERT INTO MyTable19(Col1) VALUES (100); -- fail col2가 null을 허용하지 않으니까
+
+SELECT * FROM MyTable19;
 
 -- not null default 조합 가능
 CREATE TABLE MyTable20 (
