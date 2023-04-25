@@ -2,9 +2,11 @@
 SELECT COUNT(*) FROM Products; -- 77
 SELECT COUNT(*) FROM Categories; -- 8
 
+DESC Products; -- 컬럼6개
+DESC Categories; -- 컬럼3개
+
 SELECT COUNT(*) FROM Products JOIN Categories; -- 616
-SELECT COUNT(*) FROM Products JOIN Categories; -- 616
-SELECT * FROM Products JOIN Categories;
+SELECT * FROM Products JOIN Categories; -- 컬럼9개
 
 -- on : 조인 조건
 SELECT * FROM Products JOIN Categories ON Products.CategoryID = Categories.CategoryID;
@@ -33,6 +35,9 @@ ON p.SupplierID = s.SupplierID;
 SELECT ProductName, SupplierName 
 FROM Products p JOIN Suppliers s
 ON p.SupplierID = s.SupplierID;
+
+DESC Products;
+DESC Suppliers;
 
 SELECT p.SupplierID
 FROM Products p JOIN Suppliers s

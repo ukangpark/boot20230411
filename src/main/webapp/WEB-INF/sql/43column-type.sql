@@ -137,3 +137,11 @@ Score DEC(10,3)
 );
 DESC MyTable40;
 SELECT * FROM MyTable40;
+
+DESC Customers;
+SELECT * FROM Customers;
+
+SELECT * FROM Employees;
+DESC Employees;
+
+

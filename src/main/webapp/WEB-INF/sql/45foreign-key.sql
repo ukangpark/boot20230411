@@ -49,3 +49,7 @@ DELETE FROM Student WHERE ID = 2; -- fail
 DELETE FROM StudentPhone WHERE ID = 2;
 -- 지우고 나서, Student의 2번 학생을 지워야 지워짐 
 SELECT * FROM Student;
+
+SELECT * FROM Customers;
+DESC Customers;
+DESC Orders;
