@@ -59,6 +59,8 @@ public class Controller24 {
 		model.addAttribute("customer", customer);
 	}
 	
+	// 직원 조회 및 수정 코드 작성
+	// 직원 조회
 	@RequestMapping("link7")
 	public void method7(Integer id, Model model) {
 		Employee employee = mapper.sql6(id);
@@ -66,6 +68,7 @@ public class Controller24 {
 		
 	}
 	
+	// 직원 수정
 	@RequestMapping("link8")
 	public void method8(Employee employee) {
 		int cnt = mapper.sql7(employee);
