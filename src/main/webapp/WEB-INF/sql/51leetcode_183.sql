@@ -27,3 +27,12 @@ SELECT c.name Customers
 FROM Customers c LEFT JOIN Orders o
 ON c.id=o.customerid
 WHERE o.customerId IS NULL;
+
+-- 상품을 주문하지 않은 사람 조회
+SELECT * FROM Customers;
+
+SELECT CustomerId FROM Orders;
+
+SELECT * FROM Customers WHERE id NOT IN (1,3);
+
+SELECT * FROM Customers WHERE id NOT IN (SELECT CustomerId FROM Orders);
