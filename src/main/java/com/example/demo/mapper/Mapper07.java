@@ -40,4 +40,42 @@ public interface Mapper07 {
 			""")
 	List<Employee> sql2(String keyword);
 
+	@Select("""
+			<script>
+			SELECT COUNT(*)
+			FROM Customers
+			
+			<if test="false">
+			WHERE CustomerID = 10
+			</if>
+			</script>
+			""")
+	Integer sql3();
+	
+	@Select("""
+			<script>
+			
+			SELECT COUNT(*)
+			FROM Customers
+			
+			<if test="keyword neq null">
+				<bind name="pattern" value="'%' + keyword + '%'"/>
+				WHERE CustomerName LIKE #{pattern}
+			</if>
+			
+			</script>
+			""")
+	Integer sql4(String keyword);
+
+	@Select("""
+			<script>
+			SELECT AVG(Price)
+			FROM Products
+			<if test="cid neq 0">
+			WHERE CategoryID = #{cid}
+			</if>
+			</script>
+			""")
+	Double sql5(int cid);
+
 }
