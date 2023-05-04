@@ -55,5 +55,26 @@ WHERE c.CategoryId = 1;
 
 SELECT *
 FROM Suppliers s JOIN Products p
-ON s.supplierId = p.supplierId;
+ON s.supplierId = p.supplierId
+WHERE s.SupplierId = 1;
 
+DESC Suppliers;
+DESC Products;
+
+USE Board;
+
+SELECT *, COUNT(f.id) fileCount
+FROM Board b LEFT JOIN FileName f
+ON b.id = f.boardId
+GROUP BY b.id
+ORDER BY b.id DESC
+LIMIT 0, 5;
+
+USE Board;
+
+DESC FileName;
+SELECT * FROM FileName;
+SELECT * FROM Board
+WHERE id = 2052;
+
+SELECT * FROM FileName;
