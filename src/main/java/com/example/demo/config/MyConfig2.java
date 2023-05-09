@@ -3,6 +3,7 @@ package com.example.demo.config;
 import java.util.*;
 
 import org.springframework.context.annotation.*;
+import org.springframework.security.config.annotation.method.configuration.*;
 import org.springframework.security.config.annotation.web.builders.*;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.security.core.userdetails.User.*;
@@ -10,8 +11,10 @@ import org.springframework.security.crypto.bcrypt.*;
 import org.springframework.security.crypto.password.*;
 import org.springframework.security.provisioning.*;
 import org.springframework.security.web.*;
+import org.springframework.security.web.access.expression.*;
 
 @Configuration
+@EnableMethodSecurity
 public class MyConfig2 {
 
 	@Bean
@@ -25,6 +28,7 @@ public class MyConfig2 {
 		.passwordParameter("pw");
 		
 		http.authorizeHttpRequests().requestMatchers("/abc").authenticated();//abc경로는 로그인해야만 가게하겠다.
+		//http.authorizeHttpRequests().requestMatchers("/sub33/customCheck").authenticated();
 		http.authorizeHttpRequests().anyRequest().permitAll();
 		return http.build();
 		
