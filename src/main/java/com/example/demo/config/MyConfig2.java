@@ -20,7 +20,7 @@ public class MyConfig2 {
 		//http.formLogin().defaultSuccessUrl("/list", true);//로그인설정 로그인성공하면 리스트로가겠다.
 		http.formLogin()
 		.loginPage("/sub33/mylogin")//내가 직접 만든 로그인페이지로 이동해. (디폴트로그인페이지 나오지 않음) => 그럼 로그인페이지가 나올수있게 컨트롤러를 만들어야함
-		.defaultSuccessUrl("/list", true)
+		.defaultSuccessUrl("/sub33/loginSuccess", true)
 		.usernameParameter("id")
 		.passwordParameter("pw");
 		
