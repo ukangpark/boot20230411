@@ -27,6 +27,7 @@ public class MyConfig2 {
 		.defaultSuccessUrl("/sub33/loginSuccess", true)
 		.usernameParameter("id")
 		.passwordParameter("pw");
+		http.csrf().disable();
 		
 		http.authorizeHttpRequests().requestMatchers("/abc").authenticated();//abc경로는 로그인해야만 가게하겠다.
 		//http.authorizeHttpRequests().requestMatchers("/sub33/customCheck").authenticated();

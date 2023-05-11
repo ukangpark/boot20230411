@@ -11,55 +11,50 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-	<h1>ajax 연습 1</h1>
-	<!-- div>button#button1{ajax요청} -->
-	<div>
-		<button id="button1">ajax요청</button>
-	</div>
+	<h5>json -> javaBean</h5>
+	<button id="btn1">json 전송</button> <br />
 	
 	<hr />
 	
-	<div>
-		<button id="button2">ajax요청2</button>
-	</div>
+	<button id="btn2">json 전송/link2</button> <br />
 	
 	<hr />
 	
-	<div>
-	 	<button id="button3">ajax요청3/link3</button>
-	 </div>
-	 
-	 <hr />
-	 
-	 <div>
-	 	<button id="button4">ajax요청4/link4</button>
-	 </div>
-	 
-	 <hr />
-	 
-	 <div>
-	 	<button id="button5">ajax요청5/link5/여러파라미터</button>
-	 </div>
-	 
-	 <hr />
-	 <div>
-	 	<button id="button6">ajax요청6/link6/여러파라미터</button>
-	 </div>
+	<button id="btn3">json 전송/link3</button> <br />
 	
 	<hr />
 	
-	<div>
-		<button id="button7">ajax요청7/link7/자바빈사용</button>
-	</div>
+	<button id="btn4">json 전송/link4</button> <br />
 	
 	<hr />
 	
-	<div>
-		<button id="button8">ajax요청8/link8/자바빈사용</button>
-	</div>
+	<button id="btn5">json 전송/link5</button> <br />
+	
+	<hr />
+	
+	<button id="btn6">json 전송/link6</button> <br />
+	
+	<hr />
+	
+	<button id="btn7">json 전송/link7</button> <br />
+	
+	<hr />
+	
+	<input type="text" id="inputName" placeholder="이름"/> <br />
+	<input type="text" id="inputAge" placeholder="나이"/> <br />
+	<button id="btn8">전송</button>
+	
+	<hr />
+	
+	<input type="text" id="inputName1" placeholder="이름" /> <br />
+	<input type="email" id="inputEmail1" placeholder="이메일" /> <br />
+	<input type="text" id="inputScore1" placeholder="점수" /> <br />
+	<input type="text" id="inputMarried1" placeholder="결혼" > <br />
+	<button id="btn9">전송</button>
+	
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	
-	<script src="/js/sub34/ajax1.js"></script>
+	<script src="/js/sub36/ajax.js"></script>
 </body>
 </html>
