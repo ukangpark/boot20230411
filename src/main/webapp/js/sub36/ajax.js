@@ -120,10 +120,10 @@ $("#btn8").click(function() {
 })
 
 $("#btn9").click(function() {
-	const name = $("#inputName").val();
-	const email = $("#inputEmail").val();
-	const score = $("#inputScore").val();
-	const married = $("#inputMarried").val();
+	const name = $("#inputName1").val();
+	const email = $("#inputEmail1").val();
+	const score = $("#inputScore1").val();
+	const married = $("#inputMarried1").val();
 	
 	const obj = {
 		name:name,
