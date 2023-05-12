@@ -123,7 +123,8 @@ $("#btn9").click(function() {
 	const name = $("#inputName1").val();
 	const email = $("#inputEmail1").val();
 	const score = $("#inputScore1").val();
-	const married = $("#inputMarried1").val();
+	//const married = document.querySelector("#inputMarried1").checked;
+	const married = $("#inputMarried1").is(":checked");
 	
 	const obj = {
 		name:name,
