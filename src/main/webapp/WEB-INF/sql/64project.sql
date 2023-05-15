@@ -17,4 +17,12 @@ CREATE TABLE MemberAuthority (
     PRIMARY KEY (memberId, authority)
 );
 
+SELECT * FROM MemberAuthority;
+
+INSERT INTO MemberAuthority 
+VALUES ('admin0', 'admin');
+
+SELECT *
+FROM Member m LEFT JOIN MemberAuthority ma ON m.id=ma.memberId
+WHERE m.id='admin0';
 
