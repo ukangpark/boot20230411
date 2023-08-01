@@ -16,3 +16,5 @@ SELECT * FROM Board;
 
 INSERT INTO Board (title, body, writer)
 VALUES ('샘플제목','샘플본문','user00');
+
+CREATE DATABASE ours;
